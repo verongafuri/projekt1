@@ -19,7 +19,7 @@
 
 <div class="t3">
 <img class="photo1" src="https://cdn-icons-png.flaticon.com/128/1246/1246234.png" alt="">
-<a class="text1" href="http://127.0.0.1:5500/projekt1/product.html">Poduct</a>
+<a class="text1" href="http://127.0.0.1:5500/projekt1/projekt%201/product.html">Poduct</a>
 </div>
 
 <div class="4">
@@ -37,19 +37,19 @@
 <p class="text1">Stock</p>
 </div>
 
-<div class="7">
+<div class="text1">
 <img class="photo1" src="https://cdn-icons-png.flaticon.com/128/1187/1187576.png" alt="">
 <p class="text1">Total order</p>
 </div>
 
-<div class="8">
+<div class="text1">
 <img class="photo1" src="https://cdn-icons-png.flaticon.com/128/615/615075.png" alt="">
-<p class="text1">Team</p>
+<a class="text1" href="http://127.0.0.1:5500/projekt1/projekt%201/our%20team.html">Team</a>
 </div>
 
-<div class="9">
+<div class="text1">
 <img class="photo1" src="https://cdn-icons-png.flaticon.com/128/739/739286.png" alt="">
-<p class="text1">Message</p>
+<a class="text1" href="http://127.0.0.1:5500/projekt1/projekt%201/message.html">Message</a>
 </div>
 
 <div class="10">
@@ -62,12 +62,62 @@
 <p class="text1">Settings</p>
 </div>
 
+
+
 <div class="i1">
 <img class="photo1" src="https://cdn-icons-png.flaticon.com/128/876/876779.png" alt="">
-<p class="text1">log out</p>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
 </div>
 
 </div>
+
+
+
+
 
 <div class="g1">
 
@@ -75,9 +125,8 @@
 
   <div class="group1">
   <img class="photo2" src="https://cdn-icons.flaticon.com/png/128/3114/premium/3114889.png?token=exp=1658408852~hmac=9a5de1d30c4bcc28ad9a881bb9e8a080" alt="">
-  <h1>Dashboard</h1>
+  <h1 class="c1">Dashboard</h1>
   <input class="search1" type="text" placeholder="Search.." name="search">
-
 </div>
 
 
@@ -253,5 +302,10 @@
 
 
 
+
+
+
 </body>
 </html>
+
+
